@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1978cb2604.js" crossorigin="anonymous"></script>
+    <title>Contacto-Barbería Alura</title>
+</head>
+<body>
+    <header>
+        <header>
+            <nav>
+                <div>
+                    <img src="/assets/logo-blanco.png" alt="logo Alura" class="logo">
+                </div>
+                <input type="checkbox" name="hamburguer" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="/Barberia/index.html">Home</a></li>
+                    <li><a href="/Barberia/productos.html">Productos</a></li>
+                    <li><a class="active" href="/Barberia/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+    </header>
+    <main class="contact">
+        <form action="">
+
+            <label for="nombreyapellido">Nombre y apellido</label>
+            <input type="text" class="input-padron" id="nombreyapellido" required placeholder="Nombre y Apellido">
+
+            <label for="correoelectronico">Correo electrónico</label>
+            <input type="email" class="input-padron" id="correoelectronico" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" class="input-padron" id="telefono" required placeholder="(xx) xxxx xxxx">
+
+            <label for="mensaje" required>Mensaje</label>
+            
+            <textarea class="input-padron" id="mensaje" cols="70" rows="10"></textarea>
+
+            <fielset>  <!--Se usa para agrupar etiquetas que se refieren al mismo tema o que referencian a un conjunto de datos--> 
+                <legend>¿Cómo le gustaria que lo contactemos?</legend><!--En fileset no usamos p para poner titulos usamos legend es una etiqueta de contenido-->
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                
+            </fielset>
+
+            <fieldset>
+                <legend>¿Qué horario prefieres?</legend>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Le gustaría recibir novedades de la Barbería?</label>
+            
+
+            <input type="submit" class="enviar" value="Enviar formulario">
+
+        </form>
+
+        <table>
+
+            <thead><!--Forma semanticamente correcta de escribir el encabezado en una tabla-->
+                <th>Días</th> <!--Columnas del encabezado-->
+                <th>Horarios</th>
+            </thead>
+            <tbody> <!--esta etiqueta es la correcta para el cuerpo de la tabla-->
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+    </main>
+
+    <footer>
+        <div class="footerElementos">
+            <img class="logoFooter" src="/assets/logo-blanco.png" alt="bg">
+            
+        </div>
+        <p class="copyright">&copy Copyright Barbería Alura - 2023. VsWebDesing</p>
+    </footer>
+</body>
+</html>

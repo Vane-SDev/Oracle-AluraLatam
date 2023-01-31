@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+header{
+    background-color: #BBBBBB;
+    padding:20px 0;
+}
+
+.caja{
+    width:940px;
+    position:relative;/* a la posicion absoluta definida en nav*/
+    margin: 0 auto;
+}
+nav{
+    position:absolute;
+    top:110px;
+    right: 0px;
+}
+nav li{
+    display:inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+#banner{
+    width:100%;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.titulo-principal{
+    padding-left:30px;
+
+}
+
+.principal{
+    background:rgb(233, 233, 233);
+    padding: 20px;
+}
+
+.diferenciales{
+    background: #ffffff;
+    padding:30px;
+}
+
+.titulo-secundario{
+    text-align:center;
+    padding: 20px;
+    font-size:30px;
+    font-weight: bold;
+}
+.items{
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.imagenDiferenciales{
+    width: 40%;
+}
+
+.lista-diferenciales{
+    display: inline-block; /*que ocupe solo el espacio de su contenido*/
+    vertical-align:top;
+    width: 30%;
+    margin-right:15%;
+}
+em strong{
+    color:red;
+}
+
+p{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.3em
+}
+
+
